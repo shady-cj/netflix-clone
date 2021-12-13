@@ -23,18 +23,18 @@ body {
     // pointer-events: none;
 }
 
-.underlay {
-    position: fixed;
-    z-index: -5;
-    transition: all 0.6s ease-in;
-    background-color: $white;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    clip-path: circle(20px at 90% -20%);
-    pointer-events: none;
-}
-.underlay-white {
-    clip-path: circle(2000px at 90% -20%);
-    pointer-events: all;
-}
+// .underlay {
+//     position: fixed;
+//     z-index: -5;
+//     transition: all 0.6s ease-in;
+//     background-color: $white;
+//     top: 0;
+//     height: 100%;
+//     width: 100%;
+//     clip-path: circle(20px at 90% -20%);
+//     // pointer-events: none;
+// }
+// .underlay-white {
+//     clip-path: circle(2000px at 90% -20%);
+//     // pointer-events: all;
+// }
