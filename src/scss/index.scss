@@ -8,6 +8,7 @@
     box-sizing: border-box;
     overscroll-behavior-y: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-overflow-scrolling: touch;
 }
 body {
     overflow-x: hidden;
@@ -23,18 +24,19 @@ body {
     // pointer-events: none;
 }
 
-// .underlay {
-//     position: fixed;
-//     z-index: -5;
-//     transition: all 0.6s ease-in;
-//     background-color: $white;
-//     top: 0;
-//     height: 100%;
-//     width: 100%;
-//     clip-path: circle(20px at 90% -20%);
-//     // pointer-events: none;
-// }
-// .underlay-white {
-//     clip-path: circle(3000px at 90% -20%);
-//     // pointer-events: all;
-// }
+.underlay {
+    position: fixed;
+    z-index: -5;
+    transition: all 0.6s ease-in;
+    background-color: $white;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(20px at 90% -20%);
+    background-attachment: fixed;
+    pointer-events: none;
+}
+.underlay-white {
+    clip-path: circle(3000px at 90% -20%);
+    pointer-events: all;
+}
