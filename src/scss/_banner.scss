@@ -1,8 +1,9 @@
 .banner {
     color: $white;
     height: 448px;
-    object-fit: contain;
     position: relative;
+    // background-attachment: fixed;
+    // object-fit: contain;
     #{&}_contents {
         margin-left: 30px;
         padding-top: 140px;
