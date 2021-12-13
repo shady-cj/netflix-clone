@@ -1,0 +1,39 @@
+.row {
+    width: 100%;
+    color: $white;
+    margin-left: 20px;
+    margin-top: 15px;
+    transition: color 0.5s ease-in;
+
+    #{&}_posters {
+        display: flex;
+        overflow: hidden;
+        padding: 20px;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    }
+    #{&}_image {
+        object-fit: contain;
+        max-height: 100px;
+        margin-right: 10px;
+        transition: transform 0.45s;
+        &:hover {
+            transform: scale(1.08);
+        }
+    }
+    #{&}_imageLarge {
+        max-height: 250px;
+        &:hover {
+            transform: scale(1.09);
+        }
+    }
+}
+.row-light {
+    color: red;
+}

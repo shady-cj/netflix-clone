@@ -1,0 +1,46 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 5;
+    padding: 15px 20px;
+
+    justify-content: space-between;
+
+    transition: 0.5s ease-in;
+
+    #{&}_logo {
+        width: 80px;
+        object-fit: contain;
+    }
+    #{&}_icon {
+        font-size: 30px;
+        color: $white;
+        cursor: pointer;
+        .icon {
+            transition: 0.4s ease-in;
+        }
+        .icon_black {
+            color: $darkMode-bg;
+            transform: rotate(360deg);
+        }
+    }
+}
+@mixin modeFlip($mode) {
+    @if ($mode == "dark") {
+        background: $darkMode-bg;
+
+        box-shadow: 0px 1px 7px lighten($darkMode-bg, 20%);
+    } @else {
+        background: $white;
+
+        box-shadow: 0px 1px 7px lighten($darkMode-bg, 80%);
+    }
+}
+.nav-black {
+    @include modeFlip(dark);
+}
+.nav-white {
+    @include modeFlip(light);
+}
