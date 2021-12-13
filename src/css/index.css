@@ -186,7 +186,6 @@
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  border: 2px solid red;
 }
 
 .app {
@@ -207,16 +206,16 @@ body {
   transition: all 0.6s ease-in;
   background-color: white;
   top: 0;
-  height: 100%;
+  height: 120%;
   width: 100%;
-  -webkit-clip-path: circle(20px at 90% -20%);
-          clip-path: circle(20px at 90% -20%);
+  -webkit-clip-path: circle(20px at 100% -20%);
+          clip-path: circle(20px at 100% -20%);
   pointer-events: none;
 }
 
 .underlay-white {
-  -webkit-clip-path: circle(3000px at 90% -20%);
-          clip-path: circle(3000px at 90% -20%);
+  -webkit-clip-path: circle(3000px at 100% -20%);
+          clip-path: circle(3000px at 100% -20%);
   pointer-events: all;
 }
 /*# sourceMappingURL=index.css.map */
