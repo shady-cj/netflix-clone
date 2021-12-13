@@ -3,7 +3,7 @@
   color: white;
   overflow: hidden;
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 10px;
   -webkit-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
 }
@@ -14,7 +14,7 @@
   display: flex;
   width: 100%;
   overflow: hidden;
-  padding: 20px;
+  padding: 22px 16px;
   overflow-x: scroll;
 }
 
@@ -121,6 +121,21 @@
 .banner .banner_bottomLight {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(190, 190, 190, 0.61)), to(white));
   background-image: linear-gradient(180deg, transparent, rgba(190, 190, 190, 0.61), white);
+}
+
+@media screen and (max-width: 600px) {
+  .banner .banner_title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .banner .banner_description {
+    max-width: 200px;
+    line-height: 1.2;
+    font-size: 0.5rem;
+  }
+  .banner .banner_button {
+    padding: 0.4rem 1.8rem;
+  }
 }
 
 .nav {
