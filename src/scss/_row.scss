@@ -1,12 +1,15 @@
 .row {
     width: 100%;
     color: $white;
-    margin-left: 20px;
-    margin-top: 15px;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: 2px solid red;
     transition: color 0.5s ease-in;
 
     #{&}_posters {
         display: flex;
+        width: 100%;
         overflow: hidden;
         padding: 20px;
         overflow-x: scroll;
