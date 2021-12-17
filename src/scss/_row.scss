@@ -1,9 +1,5 @@
 @mixin mediaQ {
     @media (max-width: 768px) {
-        & {
-            cursor: context-menu;
-            pointer-events: none;
-        }
         &:hover {
             transform: none;
         }

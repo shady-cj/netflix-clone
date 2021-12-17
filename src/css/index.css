@@ -47,10 +47,6 @@
 }
 
 @media (max-width: 768px) {
-  .row .row_image {
-    cursor: context-menu;
-    pointer-events: none;
-  }
   .row .row_image:hover {
     -webkit-transform: none;
             transform: none;
@@ -67,10 +63,6 @@
 }
 
 @media (max-width: 768px) {
-  .row .row_imageLarge {
-    cursor: context-menu;
-    pointer-events: none;
-  }
   .row .row_imageLarge:hover {
     -webkit-transform: none;
             transform: none;
