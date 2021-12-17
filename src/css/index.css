@@ -46,6 +46,17 @@
           transform: scale(1.08);
 }
 
+@media (max-width: 768px) {
+  .row .row_image {
+    cursor: context-menu;
+    pointer-events: none;
+  }
+  .row .row_image:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .row .row_imageLarge {
   max-height: 250px;
 }
@@ -53,6 +64,17 @@
 .row .row_imageLarge:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
+}
+
+@media (max-width: 768px) {
+  .row .row_imageLarge {
+    cursor: context-menu;
+    pointer-events: none;
+  }
+  .row .row_imageLarge:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .row-light {

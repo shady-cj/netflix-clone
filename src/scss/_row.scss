@@ -1,3 +1,14 @@
+@mixin mediaQ {
+    @media (max-width: 768px) {
+        & {
+            cursor: context-menu;
+            pointer-events: none;
+        }
+        &:hover {
+            transform: none;
+        }
+    }
+}
 .row {
     width: 100%;
     color: $white;
@@ -29,6 +40,7 @@
         &:hover {
             transform: scale(1.08);
         }
+        @include mediaQ;
     }
 
     #{&}_imageLarge {
@@ -36,6 +48,7 @@
         &:hover {
             transform: scale(1.09);
         }
+        @include mediaQ;
     }
 }
 .row-light {
